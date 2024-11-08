@@ -4,12 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tela de Pagamento</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <section class="container-payment">
+        <div class="content-payment">
+            <img src="/src/images/patroni-logo.png" alt="" srcset="">
+            <form class="container-forms" id="content-forms">
 
-    <script src="index.js"></script>
+                <div class="input-container">
+                    <label for="dinheiro">Valor total da conta:</label>
+                    <input class="input-content" type="number" id="dinheiro" name="dinheiro"
+                    placeholder="R$ 150,00" step="0.01" min="0">
+                </div>
+
+                <div class="input-container">
+                    <label for="taxaServico">Incluir taxa de serviço:</label>
+                    <select class="select-content" id="taxaServico" name="taxaServico">
+                    <option value="escolherTaxaServico">Escolher opção</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                </div>
+
+                <div class="input-container">
+                    <label for="pagantes">Quantidade de pagantes:</label>
+                    <select class="select-content" id="pagantes" name="pagantes">
+                    <option value="escolherPagantes">Escolher opção</option>
+                    <option value="opcao1">1</option>
+                    <option value="opcao2">2</option>
+                    <option value="opcao3">3</option>
+                    <option value="opcao4">4</option>
+                    <option value="opcao5">5</option>
+                </select>
+                </div>
+                <div class="button-container"><button class="botao-calcular" type="button" id="calcular-conta">CALCULAR</button>
+                </div>
+                <p>Você selecionou: <span id="resultado">Nenhuma opção</span></p>
+            </form>
+        </div>
+    </section>
+
+    <script src="/src/index.js"></script>
 </body>
 
 </html>

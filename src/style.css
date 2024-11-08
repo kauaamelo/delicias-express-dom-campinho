@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --font-space: "Space Grotesk", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-payment {
+    min-width: 100vw;
+    min-height: 100vh;
+    border: solid 5px black;
+    display: flex;
+    font-family: var(--font-space);
+    justify-content: center;
+}
+
+.content-payment {
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.content-payment img {
+    padding-bottom: 20px;
+}
+
+.container-forms {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.input-container {
+    
+}
+
+.input-container label {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.input-content {
+    width: 100%;
+    height: 42px;
+    font-family: var(--font-space);
+}
+
+.select-content {
+    width: 100%;
+    height: 42px;
+    font-family: var(--font-space);
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+}
+
+.botao-calcular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 40px;
+    background-color: #284A5E;
+    font-family: var(--font-space);
+    font-size: 1rem;
+    color: white;
+    margin-top: 30px;
+    border-radius: 4px;
+}
