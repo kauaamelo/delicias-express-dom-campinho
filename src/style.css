@@ -80,3 +80,9 @@
     margin-top: 30px;
     border-radius: 4px;
 }
+
+p{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
